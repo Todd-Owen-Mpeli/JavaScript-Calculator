@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math Calculator</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="/calculatorStylesheet.css" />
+	</head>
+
+	<body>
+		<!--===== HEADER =====-->
+		<header class="header" id="header">
+			<!-- Navigation Section -->
+			<nav class="nav">
+				<div class="nav__title">
+					<li><a href="#header" class="website-name">Todd</a></li>
+				</div>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<!-- Colour change theme button -->
+						<div class="dark-theme-switch">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox" />
+								<div class="slider">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-sun"
+									>
+										<circle cx="12" cy="12" r="5"></circle>
+										<line x1="12" y1="1" x2="12" y2="3"></line>
+										<line x1="12" y1="21" x2="12" y2="23"></line>
+										<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+										<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+										<line x1="1" y1="12" x2="3" y2="12"></line>
+										<line x1="21" y1="12" x2="23" y2="12"></line>
+										<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+										<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-moon"
+									>
+										<path
+											d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+										></path>
+									</svg>
+								</div>
+							</label>
+						</div>
+						<div class="change-theme"></div>
+						<li class="nav__item">
+							<a href="#projects" class="nav__link"
+								><i class="uil uil-browser nav__icon"></i>Projects</a
+							>
+						</li>
+						<li class="nav__item">
+							<a href="#about" class="nav__link"
+								><i class="uil uil-user nav__icon"></i>About</a
+							>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link"
+								><i class="uil uil-file-alt nav__icon"></i>Skills</a
+							>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link"
+								><i class="uil uil-location-arrow nav__icon"></i>Contact</a
+							>
+						</li>
+					</ul>
+					<div class="nav__btns">
+						<div class="nav__close-icon">
+							<i class="uil uil-times nav__close" id="nav-close"></i>
+						</div>
+					</div>
+				</div>
+				<div class="nav__btns">
+					<!-- Mobile home button -->
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="uil uil-apps"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<!--===== PROJECTS =====-->
+			<section class="projects" id="projects">
+				<div class="projects__background-display">
+					<div class="projects__content">
+						<div class="mainside_project-container">
+							<div class="projects__title">
+								<h1>
+									<strong>Math Calculator</strong>
+								</h1>
+							</div>
+							<div class="recommended__title">
+								<h1>
+									<strong>JavaScript, HTML & CSS</strong>
+								</h1>
+							</div>
+							<div class="recommended-projects__section">
+								<div class="recommended-projects">
+									<div class="recommended__content">
+										<h2 class="recommended-projects__titles">Main Goal</h2>
+										<h3 class="recommended-projects__h">
+											The languages, frameworks, libraries and tools I use to
+											create
+										</h3>
+										<p class="recommended-projects__p">
+											My main Front-end, Backend and Creative software's I have
+											knowledge using. <br />However I want to learn and develop
+											new software to increase my skill set.<br />
+										</p>
+									</div>
+								</div>
+								<div class="recommended-projects">
+									<div class="calculator-grid">
+										<div class="output">
+											<div data-previous-operand class="previous-operand"></div>
+											<div data-current-operand class="current-operand"></div>
+										</div>
+										<button data-all-clear class="span-two">AC</button>
+										<button data-delete>DEL</button>
+										<button data-operation>÷</button>
+										<button data-number>1</button>
+										<button data-number>2</button>
+										<button data-number>3</button>
+										<button data-operation>*</button>
+										<button data-number>4</button>
+										<button data-number>5</button>
+										<button data-number>6</button>
+										<button data-operation>+</button>
+										<button data-number>7</button>
+										<button data-number>8</button>
+										<button data-number>9</button>
+										<button data-operation>-</button>
+										<button data-number>.</button>
+										<button data-number>0</button>
+										<button data-equals class="span-two">=</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--===== FOOTER =====-->
+		<footer class="footer">
+			<div class="footer__background">
+				<div class="footer__container">
+					<div class="footer__content1">
+						<div class="footer__sections">
+							<h3 class="footer__h">Portfolio</h3>
+							<h3 class="footer__h">Contact Me</h3>
+							<h3 class="footer__h">Projects</h3>
+						</div>
+					</div>
+					<div class="footer__content">
+						<div class="footer__title">
+							<h1>Todd Owen Mpeli</h1>
+						</div>
+						<div class="footer__subtitle">
+							<span>Full-Stack Developer</span>
+						</div>
+					</div>
+					<div class="footer__content2">
+						<div class="footer__links">
+							<ul class="footer__socials">
+								<li>
+									<a
+										href="https://www.linkedin.com/in/todd-owen-mpeli-831b18121/"
+										target="_blank"
+										class="social-list__link"
+										><i class="uil uil-linkedin footer__icon"></i>LinkedIn</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://github.com/Todd-Owen-Mpeli"
+										target="_blank"
+										class="social-list__link"
+										><i class="uil uil-github footer__icon"></i>GitHub</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://twitter.com/ToddOwenMpeli"
+										target="_blank"
+										class="social-list__link"
+										><i class="uil uil-twitter footer__icon"></i>Twitter</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<h3>&#169; 2021 copyright all right reserved</h3>
+				</div>
+			</div>
+		</footer>
+
+		<script src="/calculator.js"></script>
+	</body>
+</html>
