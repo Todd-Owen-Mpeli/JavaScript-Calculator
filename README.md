@@ -13,7 +13,11 @@ After being tought java in my MSC Computer Science degree. And self-teaching mys
 # My Objective
 Focused on building an application using JavaScript, regardless of real-world application or functionality. After watching many javascript tutorials such as 'Understanding JavaScript in 10 minutes' etc.
 
-I really wanted to understand the JavaScript language, I didn't want to build a 'realistic' application. Because of the pressure of attempting to over-complicate the learning process would increase.
+I really wanted to understand the JavaScript language, I didn't want to build a 'realistic' application. Because of the pressure of attempting to over-complicate the learning process.
 
 # Lessons Learned
-I learned a lot building this application. But mainly from the use of connecting the back-end calculation class and displaying the results of process to the user. 
+I learned a lot building this application. But mainly from the use of connecting the back-end calculation class and displaying the results of process to the user.
+
+1. Creating a DarkMode theme in CSS and toggling the theme on/off.
+2. Utilizing an if statement to verify if the darkMode theme if active or not. And if the theme is active manipulate the HTML DOM by changing the darkMode theme icon to another icon.
+3.   
