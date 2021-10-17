@@ -26,6 +26,7 @@ class Calculator {
 		if (this.previousOperand !== "") {
 			this.compute();
 		}
+
 		this.operation = operation;
 		this.previousOperand = this.currentOperand;
 		this.currentOperand = "";
@@ -35,7 +36,9 @@ class Calculator {
 		let computation;
 		const prev = parseFloat(this.previousOperand);
 		const current = parseFloat(this.currentOperand);
+
 		if (isNaN(prev) || isNaN(current)) return;
+
 		switch (this.operation) {
 			case "+":
 				computation = prev + current;
@@ -52,6 +55,7 @@ class Calculator {
 			default:
 				return;
 		}
+
 		this.currentOperand = computation;
 		this.operation = undefined;
 		this.previousOperand = "";
@@ -62,6 +66,7 @@ class Calculator {
 		const integerDigits = parseFloat(stringNumber.split(".")[0]);
 		const decimalDigits = stringNumber.split(".")[1];
 		let integerDisplay;
+
 		if (isNaN(integerDigits)) {
 			integerDisplay = "";
 		} else {
@@ -69,6 +74,7 @@ class Calculator {
 				maximumFractionDigits: 0,
 			});
 		}
+
 		if (decimalDigits != null) {
 			return `${integerDisplay}.${decimalDigits}`;
 		} else {
@@ -80,6 +86,7 @@ class Calculator {
 		this.currentOperandTextElement.innerText = this.getDisplayNumber(
 			this.currentOperand
 		);
+
 		if (this.operation != null) {
 			this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
 				this.previousOperand
