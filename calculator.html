@@ -3,7 +3,7 @@
 	<head>
 		<title>Math Calculator</title>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="/calculatorStylesheet.css" />
+		<link rel="stylesheet" href="/src/css/styles.css" />
 	</head>
 
 	<body>
@@ -11,11 +11,11 @@
 		<header class="header" id="header">
 			<!-- Navigation Section -->
 			<nav class="nav">
-				<div class="nav__title">
-					<li><a href="#header" class="website-name">Todd</a></li>
+				<div>
+					<li><a href="#header">Todd</a></li>
 				</div>
 				<div class="nav__menu" id="nav-menu">
-					<ul class="nav__list">
+					<div class="nav__list">
 						<!-- Colour change theme button -->
 						<div class="dark-theme-switch">
 							<label class="theme-switch" for="checkbox">
@@ -59,37 +59,6 @@
 							</label>
 						</div>
 						<div class="change-theme"></div>
-						<li class="nav__item">
-							<a href="#projects" class="nav__link"
-								><i class="uil uil-browser nav__icon"></i>Projects</a
-							>
-						</li>
-						<li class="nav__item">
-							<a href="#about" class="nav__link"
-								><i class="uil uil-user nav__icon"></i>About</a
-							>
-						</li>
-						<li class="nav__item">
-							<a href="#skills" class="nav__link"
-								><i class="uil uil-file-alt nav__icon"></i>Skills</a
-							>
-						</li>
-						<li class="nav__item">
-							<a href="#contact" class="nav__link"
-								><i class="uil uil-location-arrow nav__icon"></i>Contact</a
-							>
-						</li>
-					</ul>
-					<div class="nav__btns">
-						<div class="nav__close-icon">
-							<i class="uil uil-times nav__close" id="nav-close"></i>
-						</div>
-					</div>
-				</div>
-				<div class="nav__btns">
-					<!-- Mobile home button -->
-					<div class="nav__toggle" id="nav-toggle">
-						<i class="uil uil-apps"></i>
 					</div>
 				</div>
 			</nav>
@@ -98,120 +67,102 @@
 		<main class="main">
 			<!--===== PROJECTS =====-->
 			<section class="projects" id="projects">
-				<div class="projects__background-display">
-					<div class="projects__content">
-						<div class="mainside_project-container">
-							<div class="projects__title">
+				<div class="background">
+					<div class="content">
+						<div class="info">
+							<div class="recommended__content">
 								<h1>
-									<strong>Math Calculator</strong>
-								</h1>
-							</div>
-							<div class="recommended__title">
-								<h1>
+									<strong>Calculator</strong>
+								</h2>
+								<h2>
 									<strong>JavaScript, HTML & CSS</strong>
-								</h1>
+								</h2>
+								<h5>
+									<strong>1. Project Context</strong>
+								</h5>
+								<p>
+									After being tought java in my MSC Computer Science degree.
+									And self-teaching myself HTML, CSS & SCSS. I wanted to learn
+									the basics of JavaScript, the Syntax, Variables, Operator
+									and Functions. I wanted to: <br /><br />
+
+									1. Understand the logic process of recieving an input in
+									HTML, then manipulating the input with javascript and
+									presenting an output through HTML. <br /><br />
+									2. Store information into variables. <br /><br />
+									3. HTML DOM manipulation and present the result back to the
+									user. <br /><br />
+									4. Using 'if & else' statments. <br /><br />
+									5. Creating a Dark Mode version of the application.
+								</p>
+								<h5>
+									<strong>2. My Objective</strong>
+								</h5>
+								<p>
+									Focused on building an application using JavaScript,
+									regardless of real-world application or functionality. After
+									watching many javascript tutorials such as 'Understanding
+									JavaScript in 10 minutes' etc. <br /><br />
+									I really wanted to understand the JavaScript language, I
+									didn't want to build a 'realistic' application. Because of
+									the pressure of attempting to over-complicate the learning
+									process.
+								</p>
+								<h5>
+									<strong>3. Lessons Learned</strong>
+								</h5>
+								<p>
+									I learned a lot building this application. But mainly from
+									the use of connecting the back-end calculation class and
+									displaying the results of process to the user.<br /><br />
+
+									1. Creating a DarkMode theme in CSS and toggling the theme
+									on/off.<br /><br />
+									2. Utilizing an if statement to verify if the darkMode theme
+									if active or not. And if the theme is active manipulate the
+									HTML DOM by changing the darkMode theme icon to another
+									icon. <br /><br />
+									3. Utilizing an event listener when a button as been clicked
+									and then executing a operation afterwards.
+									<br /><br />
+									4. Having a global variable to execute functions. (Example:
+									calculator.updateDisplay()).<br /><br />
+								</p>
+								<h5>
+									<strong>4. Personal Improvements</strong>
+								</h5>
+								<p>
+									Although the calculator application executes on it original
+									objective. I would like to further understand javascript
+									language by building a more realistic real-world application
+									or functionality.
+								</p>
 							</div>
-							<div class="recommended-projects__section">
-								<div class="recommended-projects">
-									<div class="recommended__content">
-										<h2 class="recommended-projects__titles">Main Goal</h2>
-										<h3 class="recommended-projects__h">
-											The languages, frameworks, libraries and tools I use to
-											create
-										</h3>
-										<p class="recommended-projects__p">
-											My main Front-end, Backend and Creative software's I have
-											knowledge using. <br />However I want to learn and develop
-											new software to increase my skill set.<br />
-										</p>
-										<h2 class="recommended-projects__h">
-											<strong>Project Context</strong>
-										</h2>
-										<p class="recommended-projects__p">
-											After being tought java in my MSC Computer Science degree.
-											And self-teaching myself HTML, CSS & SCSS. I wanted to
-											learn the basics of JavaScript, the Syntax, Variables,
-											Operator and Functions. I wanted to: <br /><br />
-
-											1. Understand the logic process of recieving an input in
-											HTML, then manipulating the input with javascript and
-											presenting an output through HTML. <br /><br />
-											2. Store information into variables. <br /><br />
-											3. HTML DOM manipulation and present the result back to
-											the user. <br /><br />
-											4. Using 'if & else' statments. <br /><br />
-											5. Creating a Dark Mode version of the application.
-										</p>
-										<h2 class="recommended-projects__h">
-											<strong>My Objective</strong>
-										</h2>
-										<p class="recommended-projects__p">
-											Focused on building an application using JavaScript,
-											regardless of real-world application or functionality.
-											After watching many javascript tutorials such as
-											'Understanding JavaScript in 10 minutes' etc. <br /><br />
-											I really wanted to understand the JavaScript language, I
-											didn't want to build a 'realistic' application. Because of
-											the pressure of attempting to over-complicate the learning
-											process.
-										</p>
-										<h2 class="recommended-projects__h">
-											<strong>Lessons Learned</strong>
-										</h2>
-										<p class="recommended-projects__p">
-											I learned a lot building this application. But mainly from
-											the use of connecting the back-end calculation class and
-											displaying the results of process to the user.<br /><br />
-
-											1. Creating a DarkMode theme in CSS and toggling the theme
-											on/off.<br /><br />
-											2. Utilizing an if statement to verify if the darkMode
-											theme if active or not. And if the theme is active
-											manipulate the HTML DOM by changing the darkMode theme
-											icon to another icon. <br /><br />
-											3. Utilizing an event listener when a button as been
-											clicked and then executing a operation afterwards.
-											<br /><br />
-											4. Having a global variable to execute functions.
-											(Example: calculator.updateDisplay()).<br /><br />
-										</p>
-										<h2 class="recommended-projects__h">
-											<strong>Personal Improvements</strong>
-										</h2>
-										<p class="recommended-projects__p">
-											Although the calculator application executes on it
-											original objective. I would like to further understand
-											javascript language by building a more realistic
-											real-world application or functionality.
-										</p>
+						</div>
+						<div class="info">
+							<div class="calculator-grid">
+									<div class="output">
+										<div data-previous-operand class="previous-operand"></div>
+										<div data-current-operand class="current-operand"></div>
 									</div>
-								</div>
-								<div class="recommended-projects">
-									<div class="calculator-grid">
-										<div class="output">
-											<div data-previous-operand class="previous-operand"></div>
-											<div data-current-operand class="current-operand"></div>
-										</div>
-										<button data-all-clear class="span-two">AC</button>
-										<button data-delete>DEL</button>
-										<button data-operation>÷</button>
-										<button data-number>1</button>
-										<button data-number>2</button>
-										<button data-number>3</button>
-										<button data-operation>*</button>
-										<button data-number>4</button>
-										<button data-number>5</button>
-										<button data-number>6</button>
-										<button data-operation>+</button>
-										<button data-number>7</button>
-										<button data-number>8</button>
-										<button data-number>9</button>
-										<button data-operation>-</button>
-										<button data-number>.</button>
-										<button data-number>0</button>
-										<button data-equals class="span-two">=</button>
-									</div>
-								</div>
+									<button data-all-clear class="span-two">AC</button>
+									<button data-delete>DEL</button>
+									<button data-operation>÷</button>
+									<button data-number>1</button>
+									<button data-number>2</button>
+									<button data-number>3</button>
+									<button data-operation>*</button>
+									<button data-number>4</button>
+									<button data-number>5</button>
+									<button data-number>6</button>
+									<button data-operation>+</button>
+									<button data-number>7</button>
+									<button data-number>8</button>
+									<button data-number>9</button>
+									<button data-operation>-</button>
+									<button data-number>.</button>
+									<button data-number>0</button>
+									<button data-equals class="span-two">=</button>
 							</div>
 						</div>
 					</div>
@@ -231,7 +182,7 @@
 					</div>
 					<div class="footer__content">
 						<div class="footer__title">
-							<h1>Todd Owen Mpeli</h1>
+							<h2>Todd Owen Mpeli</h2>
 						</div>
 						<div class="footer__subtitle">
 							<span>Full-Stack Developer</span>
@@ -274,6 +225,6 @@
 			</div>
 		</footer>
 
-		<script src="/calculator.js"></script>
+		<script src="/src/js/calculator.js"></script>
 	</body>
 </html>
