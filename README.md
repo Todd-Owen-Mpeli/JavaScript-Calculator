@@ -15,6 +15,12 @@ Focused on building an application using JavaScript, regardless of real-world ap
 
 I really wanted to understand the JavaScript language, I didn't want to build a 'realistic' application. Because of the pressure of attempting to over-complicate the learning process.
 
+# Cover Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/javaScript%20calculator%20cover%20image.png" width="100%" height="700px">
+
 # Lessons Learned
 I learned a lot building this application. But mainly from the use of connecting the back-end calculation class and displaying the results of process to the user.
 
