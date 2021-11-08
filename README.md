@@ -27,4 +27,4 @@ I learned a lot building this application. But mainly from the use of connecting
 Although the calculator application executes on it original objective. I would like to further understand javascript language by building a more realistic real-world application or functionality.
 
 # Deployment
-Deployed with GitHub pages. (Near Future)
+Deployed with GitHub pages here: https://github.com/Todd-Owen-Mpeli/JavaScript-Calculator
