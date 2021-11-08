@@ -74,19 +74,35 @@ a {
 		padding: 1rem 2rem;
 		justify-content: space-between;
 
-		div {
-			a {
-				display: flex;
-				padding: 1rem;
-				align-items: center;
-				color: $baseColor_black;
-				font-size: $fontSize_large-0;
-				font-family: $fontStyle_header;
-			}
+		.nav__title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 
-			a:hover {
-				transition: all 0.5s ease-in-out;
-				color: $secondary_Purple;
+			li {
+				list-style: none;
+				a {
+					display: flex;
+					padding: 1rem;
+					align-items: center;
+					color: $baseColor_black;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_header;
+
+					.bi {
+						margin-left: 1rem;
+						font-size: 2rem;
+					}
+					.bi:hover {
+						margin-left: 1rem;
+						color: var(--color-navigation-hover-accent-pinkRedPurple);
+					}
+				}
+
+				a:hover {
+					transition: all 0.5s ease-in-out;
+					color: $secondary_Purple;
+				}
 			}
 		}
 
